@@ -23,7 +23,7 @@ while True:
         client_socket.send("Please enter your name: ".encode('utf-8'))
         client_name = client_socket.recv(1024).decode('utf-8')
         print(f"New client joined with name: {client_name}")
-        client_socket.send(f"Hello {client_name}! Welcome to the server 👋".encode('utf-8'))
+        client_socket.send(f"Hello {client_name}! Welcome to the server :D".encode('utf-8'))
 
         # Two-way communication with the client
         while True:
